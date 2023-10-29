@@ -208,69 +208,7 @@ nav ul li:hover ul  ul{
   display: none;
 }
 
-@media screen and(max-width:720px) {
-  .search {
-    display: none;
-  }
 
-  .header__superior {
-    padding: 10px;
-  }
-
-  .logo img {
-    width: 200px;
-  }
-
-  .title {
-    margin-left: 5550px;
-  }
-
-  nav>ul {
-    flex-direction: column;
-    background-color: #023877;
-    position: fixed;
-    left: 0;
-    top: 158px;
-    width: 100%;
-    height: 0px;
-    transition: all 300ms ease;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  nav>ul>li>a:hover {
-    transform: scale(1);
-  }
-
-  nav ul li ul {
-    left: 90px;
-  }
-
-  nav>ul>li:hover ul {
-    top: 50px;
-  }
-
-  nav>ul>li:first-child a {
-    background-position: 20px;
-  }
-
-  #selected {
-    transform: scale(1);
-  }
-  #label__check{
-    display: block;
-  }
-  .icon__menu{
-    display: flex;
-  }
-  #check__menu:checked ~ nav > ul{
-    height: 300px;
-    visibility: visible;
-    opacity: 1;
-}
-
-}
 
 
 
@@ -347,13 +285,13 @@ nav ul li:hover ul  ul{
 }
 
 
-.loader {
+.logs {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-.logo {
+.logs {
   width: 150px;
   height: 150px;
   border: none;
@@ -364,11 +302,11 @@ nav ul li:hover ul  ul{
   z-index: 10;
 }
 
-.logo img {
+.logs img {
   width: 100%;
 }
 
-.logo:hover {
+.logs:hover {
   transform: scale(1.1);
 }
 
@@ -376,7 +314,7 @@ nav ul li:hover ul  ul{
 /*Buscador de productos*/
 .search {
   position: absolute;
-  margin-left: 1160px;
+  margin-left: 1250px;
   display: flex;
   align-items: center;
   top: 35px;
@@ -582,4 +520,121 @@ nav ul li:hover ul  ul{
 
 .btn-user:hover svg {
   fill: #0400ff;
+}
+/*Footer logos y demas */
+
+
+footer {
+  width: 100%;
+  padding:-0px ; /* Aumenta el espacio inferior para bajar más el footer */
+  background-color: #023877;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+
+}
+
+.background-image {
+  background-image: url(Imagenes/background-footer.svg);
+
+}
+
+
+
+
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img{
+  width: 180px;
+  margin-top: -55px;
+}
+
+.box__footer .Redes{
+  max-width: 350px;
+  margin-top: 0px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
 }
