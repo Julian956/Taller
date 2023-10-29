@@ -1,11 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Merienda', cursive;
   text-decoration: none;
 }
-header{
+
+header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -16,58 +17,70 @@ header{
 
 
 /*Header superior*/
-.header_superior{
+.header__superior {
   max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
+
 }
 
 
 
 /*Menu desplegable*/
-.container__menu{
+.container__menu {
   width: 100%;
   height: 70px;
   background: #023877;
   padding: 0 20px;
+  margin-top: 10px;
+
 }
-.menu{
+
+.menu {
   max-width: 1200px;
   margin: auto;
   height: 100%;
-}
-nav{
-  height: 100%;
+  
 }
 
-nav > ul{
-height: 100%;
-display: flex;
+nav {
+  height: 100%;
+  margin-top: -20px;
 }
-nav >ul >li{
+
+nav>ul {
+  height: 100%;
+  display: flex;
+}
+
+nav ul li {
   height: 100%;
   list-style: none;
   position: relative;
 
 }
-nav > ul > li:first-child:hover>a{
-  background-image: url(../Taller/Imagenes/hogar.png);
+
+nav>ul>li:first-child:hover>a {
+  background-image: url("Imagenes/hogar.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center center;
   padding: 20px 40px;
 
 }
-nav > ul > li:first-child>a{
-  background-image: url(../Taller/Imagenes/hogar.png);
+
+nav>ul>li:first-child>a {
+  background-image: url("Imagenes/hogar.png");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center center;
 
 }
-nav > ul > li >a{
+
+nav>ul>li>a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -79,17 +92,185 @@ nav > ul > li >a{
   transition: all 300ms ease;
 
 }
-nav > ul > li >a:hover{
+
+nav>ul>li>a:hover {
   transform: scale(1.1);
   background: #0074c7;
-  box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
-}
-#selected{
-  transform: scale(1.1);
-  background-color: #0074c7;
-  box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+#Selected {
+  transform: scale(1.1);
+  background-color: #0074c7;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*Submenu*/
+nav ul li ul {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+}
+
+nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+
+
+}
+
+nav ul li ul:before {
+  content: '';
+  height: 0;
+  width: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+nav ul li ul li a {
+  display: block;
+  color: #0099E9;
+  padding: 6px;
+  padding-left: 14px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+
+}
+
+nav ul li ul li a:hover {
+  background: #0074c7;
+  color: #fff;
+  transform: scale(1.2);
+  padding-left: 30px;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+nav ul li ul ul {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 100%; 
+  margin-left: 10px; 
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+}
+
+nav ul li:hover ul  ul{
+  visibility: visible;
+  opacity: 1;
+  top: 0; 
+}
+
+/*Elementos responsivos*/
+.icon__menu{
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+
+#label__check{
+  width: 26px;
+  height: 100%;
+  display: none;
+}
+
+#check__menu{
+  display: none;
+}
+
+@media screen and(max-width:720px) {
+  .search {
+    display: none;
+  }
+
+  .header__superior {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .title {
+    margin-left: 5550px;
+  }
+
+  nav>ul {
+    flex-direction: column;
+    background-color: #023877;
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  nav>ul>li>a:hover {
+    transform: scale(1);
+  }
+
+  nav ul li ul {
+    left: 90px;
+  }
+
+  nav>ul>li:hover ul {
+    top: 50px;
+  }
+
+  nav>ul>li:first-child a {
+    background-position: 20px;
+  }
+
+  #selected {
+    transform: scale(1);
+  }
+  #label__check{
+    display: block;
+  }
+  .icon__menu{
+    display: flex;
+  }
+  #check__menu:checked ~ nav > ul{
+    height: 300px;
+    visibility: visible;
+    opacity: 1;
+}
+
+}
 
 
 
@@ -114,251 +295,291 @@ nav > ul > li >a:hover{
 
 /*Marca*/
 .title {
-  font-size: 25px; /* Ajusta el tamaño de fuente según tus preferencias */
+  font-size: 20px;
+  /* Ajusta el tamaño de fuente según tus preferencias */
   background: linear-gradient(#1497be, #1c2aec);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   animation: text 5s linear infinite;
   filter: hue-rotate(0deg);
-  margin-top: 10px;
+  margin-top: -0px;
   margin-left: 450px;
-  
+
 }
-@keyframes text{
-  0%{
-    filter:hue-rotate(0deg)
+
+
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg)
   }
-  100%{
+
+  100% {
     filter: hue-rotate(360deg);
   }
 }
 
+.sub_title {
+  font-size: 15px;
+  /* Ajusta el tamaño de fuente según tus preferencias */
+  background: linear-gradient(#1497be, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text 5s linear infinite;
+  filter: hue-rotate(0deg);
+  margin-left: 10px;
 
 
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg)
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+
+
+}
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .logo {
-    position: fixed;
-  top: -35px; /* Ajusta la distancia desde la parte superior según tus preferencias */
-  left:-45px; /* Ajusta la distancia desde la izquierda según tus preferencias */
-  width: 230px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: none;
-  border-radius: 50%; /* Hace que el logo tenga forma de círculo */
+  border-radius: 50%;
   transition: transform 0.3s;
-  }
-  .logo img{
-    width: 250px;
-  }
+  margin-right: 25px;
+  margin-top: -25px;
+  z-index: 10;
+}
 
-  .logo-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+.logo img {
+  width: 100%;
+}
 
-  .logo:hover {
-    transform: scale(1.1);
-  }
+.logo:hover {
+  transform: scale(1.1);
+}
 
-  /*Buscador de productos*/
-  .search {
-    position: relative;
-    margin-left: 1280px;
-    margin-top: -100px;
-  }
-  
-  .input {
-    width: 150px;
-    padding: 10px 0 10px 40px;
-    border-radius: 9999px;
-    border: solid 1px #333;
-    transition: all .2s ease-in-out;
-    outline: none;
-    opacity: 0.8;
-  }
-  
-  .search svg {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(0, -50%);
-  }
-  
-  .input:focus {
-    opacity: 1;
-    width: 250px;
-  }
-  
+
+/*Buscador de productos*/
+.search {
+  position: absolute;
+  margin-left: 1160px;
+  display: flex;
+  align-items: center;
+  top: 35px;
+}
 
 
 
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  /*Boton de corazon o likes*/
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 50px;
-    right: 220px;
-    transition: transform 0.3s; /* Agregado */
-  }
-  
-  .btn::after {
-    content: attr(data-quantity);
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 15px;
-    color: rgb(250, 4, 4);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s linear;
-    top: 115%;
-  }
-  
-  .icon1 {
-    width: 30px;
-    height: 30px;
-    transition: .2s linear;
-  }
-  
-  .icon1 path {
-    fill: rgb(255, 0, 0);
-    transition: .2s linear;
-  }
-  
-  .btn:hover {
-    transform: scale(1.1); /* Ajustado */
-  }
-  
-  .btn:hover .icon path {
-    fill: rgb(252, 4, 4);
-  }
-  
-  .btn:hover::after {
-    visibility: visible;
-    opacity: 1;
-    top: 105%;
-  }
-  
-  .quantity {
-    display: none;
-  }
-  
-  .btn:hover .quantity {
-    display: inline-block;
-  }
-  
-  
-  
-  
-  
-  
-  /*boton de carrito de compras*/
-  .btn-cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 20px;
-    right: 150px;
-  }
-  
-  .btn-cart::after {
-    content: attr(data-quantity);
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    font-size: 15px;
-    color: rgb(71, 11, 236);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    transition: .2s linear;
-    top: 115%;
-  }
-  
-  .icon-cart {
-    width: 30px;
-    height: 30px;
-    transition: .2s linear;
-  }
-  
-  .icon-cart path {
-    fill: rgb(2, 6, 255);
-    transition: .2s linear;
-  }
-  
-  .btn-cart:hover>.icon-cart {
-    transform: scale(1.2);
-  }
-  
-  .btn-cart:hover>.icon-cart path {
-    fill: rgb(28, 5, 238);
-  }
-  
-  .btn-cart:hover::after {
-    visibility: visible;
-    opacity: 1;
-    top: 105%;
-  }
-  
-  .quantity {
-    display: none;
-  }
+.input {
+  width: 150px;
+  padding: 10px 0 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
 
 
 
-  .btn-user {
-    position: absolute; /* Cambiamos a posición absoluta */
-    top: 30px; /* Ajusta la posición vertical (ejemplo: 20px desde la parte superior) */
-    right: 70px; /* Ajusta la posición horizontal (ejemplo: 20px desde la derecha) */
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s, color 0.2s;
-    outline: none;
-  }
-  
-  .btn-user svg {
-    width: 2.1em;
-    height: 2.5em;
-    fill: #e61212;
-  }
-  
-  .btn-user:hover {
-    transform: scale(1.1);
-  }
-  
-  .btn-user:hover svg {
-    fill: #0400ff;
-  }
-  
+.search svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Boton de corazon o likes*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  right: 220px;
+  transition: transform 0.3s;
+  /* Agregado */
+}
+
+.btn::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: rgb(250, 4, 4);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
+}
+
+.icon1 {
+  width: 30px;
+  height: 30px;
+  transition: .2s linear;
+}
+
+.icon1 path {
+  fill: rgb(255, 0, 0);
+  transition: .2s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  /* Ajustado */
+}
+
+.btn:hover .icon path {
+  fill: rgb(252, 4, 4);
+}
+
+.btn:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+
+.quantity {
+  display: none;
+}
+
+.btn:hover .quantity {
+  display: inline-block;
+}
+
+
+
+
+
+
+/*boton de carrito de compras*/
+.btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 150px;
+}
+
+.btn-cart::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: rgb(71, 11, 236);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
+}
+
+.icon-cart {
+  width: 30px;
+  height: 30px;
+  transition: .2s linear;
+}
+
+.icon-cart path {
+  fill: rgb(2, 6, 255);
+  transition: .2s linear;
+}
+
+.btn-cart:hover>.icon-cart {
+  transform: scale(1.2);
+}
+
+.btn-cart:hover>.icon-cart path {
+  fill: rgb(28, 5, 238);
+}
+
+.btn-cart:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+
+.quantity {
+  display: none;
+}
+
+
+
+.btn-user {
+  position: absolute;
+  /* Cambiamos a posición absoluta */
+  top: 30px;
+  /* Ajusta la posición vertical (ejemplo: 20px desde la parte superior) */
+  right: 70px;
+  /* Ajusta la posición horizontal (ejemplo: 20px desde la derecha) */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  outline: none;
+}
+
+.btn-user svg {
+  width: 2.1em;
+  height: 2.5em;
+  fill: #e61212;
+}
+
+.btn-user:hover {
+  transform: scale(1.1);
+}
+
+.btn-user:hover svg {
+  fill: #0400ff;
+}
