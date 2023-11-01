@@ -41,7 +41,7 @@
 /*Menu desplegable*/
 .container__menu {
   width: 100%;
-  background: #023877;
+  background: #9D7577;
 }
 
 .menu {
@@ -415,7 +415,7 @@ nav ul li:hover ul  ul{
 }
 
 .icon1 path {
-  fill: rgb(255, 0, 0);
+  fill: rgb(247, 245, 245);
   transition: .2s linear;
 }
 
@@ -425,7 +425,7 @@ nav ul li:hover ul  ul{
 }
 
 .btn:hover .icon path {
-  fill: rgb(252, 4, 4);
+  fill: rgb(175,163,163);
 }
 
 .btn:hover::after {
@@ -484,7 +484,7 @@ nav ul li:hover ul  ul{
 }
 
 .icon-cart path {
-  fill: rgb(255, 2, 2);
+  fill: rgb(241, 241, 241);
   transition: .2s linear;
 }
 
@@ -493,7 +493,7 @@ nav ul li:hover ul  ul{
 }
 
 .btn-cart:hover>.icon-cart path {
-  fill: rgb(255, 0, 0);
+  fill: rgb(175, 163, 163);
 }
 
 .btn-cart:hover::after {
@@ -666,7 +666,7 @@ nav ul li:hover ul  ul{
         top: -50%;
         width: 100%;
         height: 100%;
-        background: #200be0;
+        background: #ffffff;
         /*This declaration allows the cutting on the card*/
         transform: skewY(345deg) !important;
         transition: 0.5s;
@@ -734,7 +734,7 @@ nav ul li:hover ul  ul{
 
         & .price {
             font-size: 24px;
-            color: #ffce00;
+            color: #ffffff;
             font-weight: 500;
             letter-spacing: 1px;
         }
@@ -745,9 +745,9 @@ nav ul li:hover ul  ul{
             opacity: 0;
             padding: 10px 30px;
             margin-top: 15px;
-            color: #FFF;
+            color: #000000;
             text-decoration: none;
-            background: #3700ff;
+            background: #ffffff;
             border-radius: 30px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -771,7 +771,7 @@ nav ul li:hover ul  ul{
 footer {
   width: 100%;
   padding:-0px ; /* Aumenta el espacio inferior para bajar más el footer */
-  background-color: #023877;
+  background-color: #9D7577;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -785,6 +785,7 @@ footer {
 
 .background-image {
   background-image: url(Imagenes/background-footer.svg);
+  
 
 }
 
