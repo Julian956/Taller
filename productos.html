@@ -5,47 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="hola.css" type="text/css">
+    <link rel="stylesheet" href="Estilos.css" type="text/css">
 </head>
 
-<body>
-    <div class="card">
+<body>  
 
-        <div class="card-headphone">
-            <img src="Imagenes/accesorios/Gafas.png" alt="Gafas">
-        </div>
-
-        <div class="card-infos">
-            <h3 class="card-title">Gafas</h3>
-            <h2 class="price">$40.<small>99</small></h2>
-
-
-            <a href="#" class="buy">Buy Now</a>
-            <div class="Icons-buttons">
-                <button class="btn-cart">
-                    <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>icon-cart</title>
-                        <path transform="translate(-3.62 -0.85)"
-                            d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
-                        </path>
-                    </svg>
-                    
-                </button>
-                <button class="btn" >
-                    <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg"
-                        class="icon1">
-                        <path transform="translate(0 0)"
-                            d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z"
-                            id="Fill"></path>
-                    </svg>
-                </button>
-
+    <main>
+        <article>
+            <div class="container-title"></div>
+            <div class="container-img">
+                <img src="Imagenes/hombre/Camibuzo-tricolor.png" alt="Imagen">
             </div>
-            
-            
-        </div>
-    </div>
+            <div class="container-info-product">
+                <div class="container-price">
+                    <span>$75.00</span>
+                    <i class="fa-regular
+                    fa-chevron-right"></i>
+
+                </div>
+                <div class="container-details-product">
+                    <div class="form-group">
+                        <label for="colour">Color</label>
+                        <select name="colour" id="colour">
+                            <option disabled selected value="">Escoge una opcion</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="blanco">Blanco</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Talla</label>
+                        <select name="size" id="size">
+                            <option disabled selected value="">
+                                Escoge una opción
+                            </option>
+                            <option value="40">40</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </div>
+                    <button class="btn-clean">Limpiar</button>
+                </div>
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+                        <div class="btn-increment-decrement">
+                            <i class="fa-solid fa-chevron-up" id="increment"></i>
+                            <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                        </div>
+                    </div>
+                    <button class="btn-cart">
+                        <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>icon-cart</title>
+                            <path transform="translate(-3.62 -0.85)"
+                                d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503"
+                            xmlns="http://www.w3.org/2000/svg" class="icon1">
+                            <path transform="translate(0 0)"
+                                d="M8.752,15.625h0L1.383,8.162a4.824,4.824,0,0,1,0-6.762,4.679,4.679,0,0,1,6.674,0l.694.7.694-.7a4.678,4.678,0,0,1,6.675,0,4.825,4.825,0,0,1,0,6.762L8.752,15.624ZM4.72,1.25A3.442,3.442,0,0,0,2.277,2.275a3.562,3.562,0,0,0,0,5l6.475,6.556,6.475-6.556a3.563,3.563,0,0,0,0-5A3.443,3.443,0,0,0,12.786,1.25h-.01a3.415,3.415,0,0,0-2.443,1.038L8.752,3.9,7.164,2.275A3.442,3.442,0,0,0,4.72,1.25Z"
+                                id="Fill"></path>
+                        </svg>
+
+                    </button>
+                    <div class="name-icons">
+                        <i>Carrito de compras</i>
+                        <i>Mis anhelos</i>
+                    </div>
+                </div>
+                <div class="container-description">
+                    <div class="title-description">
+                        <h4>Descripción</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laboriosam iure provident atque voluptatibus
+                            reiciendis quae rerum, maxime placeat enim cupiditate
+                            voluptatum, temporibus quis iusto. Enim eum qui delectus
+                            deleniti similique? Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Sint autem magni earum est
+                            dolorem saepe perferendis repellat ipsam laudantium cum
+                            assumenda quidem quam, vero similique? Iusto officiis
+                            quod blanditiis iste?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-additional-information">
+                    <div class="title-additional-information">
+                        <h4>Información adicional</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-additional-information hidden">
+                        <p>-----------</p>
+                    </div>
+                </div>
+
+                <div class="container-reviews">
+                    <div class="title-reviews">
+                        <h4>Reseñas</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-reviews hidden">
+                        <p>-----------</p>
+                    </div>
+                </div>
+
+                <div class="container-social">
+                    <span>Compartir</span>
+                    <div class="container-buttons-social">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+        <section class="container-related-products">
+			<h2>Productos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+							alt="producto-1"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Nike - Roshe Run</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$85.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80"
+							alt="producto-2"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$255.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+							alt="producto-3"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Adidas - Boston Super OG</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$105.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+							alt="producto-4"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Common Projects Achilles</h3>
+							<p class="category">Footwear, Sneakers</p>
+						</div>
+						<div class="price">$250.00</div>
+					</div>
+				</div>
+			</div>
+		</section>          
+
+
+    </main>
+
 
 
 </body>
