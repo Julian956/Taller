@@ -60,202 +60,7 @@ button.white {
 body {
   width: 100%;
 }
-/*************************/
-/* Header Start */
-/**************************/
-#header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 80px;
-  background: #e3e6f3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
 
-/************************/
-/*logo*/
-.logs {
-  width: 150px;
-  height: 150px;
-  border: none;
-  border-radius: 50%;
-  transition: transform 0.3s;
-  margin-right: 25px;
-  margin-top: -25px;
-  z-index: 10;
-}
-
-.logs img {
-  width: 100%;
-}
-
-.logs:hover {
-  transform: scale(1.1);
-}
-/***************************/
-/*Dropdown menu*/
-/****************************/
-#navbar_lower {
-  display: flex;
-  list-style: none;
-  margin-left: -1250px;
-  margin-top: 70px;
-}
-
-#navbar_lower li {
-  position: relative;
-  margin-right: 10px; /* Agregamos un margen derecho entre elementos */
-  list-style: none;
-}
-
-#navbar_lower a {
-  display: flex;
-  background: transparent;
-  align-items: center;
-  padding: 14px;
-
-  font-size: 14px;
-  transition: all 300ms ease;
-}
-
-#navbar_lower li a:hover,
-#navbar_lower li a.active {
-  color: #088178;
-}
-
-
-#navbar_lower li a.active::after,
-#navbar_lower li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #088178;
-  position: absolute;
-  bottom: -2px;
-  left: 10px;
-}
-
-#navbar_lower li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
-    transition: 0.3s ease;
-  }
-
-/* Submenu */
-#navbar_lower ul {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  background: transparent;
-  position: absolute;
-  top: 100%; /* Posicionamos el submenú debajo del elemento padre */
-  left: 0;
-  padding: 14px 0px;
-  visibility: hidden;
-  opacity: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  transition: all 300ms ease;
-}
-
-#navbar_lower li:hover ul {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-
-#navbar_lower ul li a {
-  display: block;
-  color: #000000;
-  padding: 6px;
-  padding-left: 14px;
-  margin-top: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 300ms ease;
-}
-
-#navbar_lower ul li a:hover {
-  background: transparent;
-  color: #000000;
-  transform: scale(1.2);
-  padding-left: 30px;
-  font-size: 14px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-#navbar_lower ul ul {
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  background:transparent;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-left: 10px;
-  padding: 14px 0px;
-  visibility: hidden;
-  opacity: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  transition: all 300ms ease;
-}
-
-#navbar_lower li:hover ul ul {
-  visibility: visible;
-  opacity: 1;
-  top: 0;
-}
-
-/***************************************/
-/*******/ /*Menu*/
-
-/****************************************/
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#navbar li {
-  list-style: none;
-  padding: 0 20px;
-  position: relative;
-}
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: #000000;
-  transition: 0.3s ease;
-}
-#navbar li a:hover,
-#navbar li a.active {
-  color: #088178;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: #088178;
-  position: absolute;
-  bottom: -4px;
-  left: 20px;
-}
-#mobile {
-  display: none;
-  align-items: center;
-}
-#cerrar {
-  display: none;
-}
 /***********************************************/
 /* Home Page */
 
@@ -542,106 +347,17 @@ body {
   border-bottom-right-radius: 0;
 }
 #newsletter button {
-  background-color: #088178;
+  background-color: #439b95;
   color: #fff;
   white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-footer .logo {
-  width: 550px;
-  height: 250px;
-  border-radius: 50%;
-}
-footer h4 {
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-footer p {
-  font-size: 13px;
-  margin: 0 0 8px 0;
-}
-footer a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #222;
-  margin-bottom: 10px;
-}
 
-.parent {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.child {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-.child:hover {
-  background-color: white;
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-  transform: perspective(180px) rotateX(60deg) translateY(2px);
-  box-shadow: 0px 10px 10px rgb(1, 49, 182);
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  font-size: 20px;
-}
-
-.button:hover {
-  width: inherit;
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg)
-    translateY(2px);
-  border-radius: 50%;
-}
-footer .install .row img {
-  border: 1px solid #000000;
-  border-radius: 6px;
-}
-footer .install img {
-  margin: 10px 0 15px 0;
-}
-footer .follow i:hover,
-footer a:hover {
-  color: #088178;
-}
-footer .copyright {
-  width: 100%;
-  text-align: center;
-}
 
 /* Shop Page */
 #page-header {
-  background-image: url("../img/banner/b1.jpg");
+  background-image: url("../img/banner/b19.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -868,6 +584,22 @@ footer .copyright {
     margin-right: 0px;
   }
   #prodetails .single-pro-details {
+    width: 100%;
+  }
+  #blog{
+    padding: 100px  20px 0 20px;
+  }
+  #blog-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+  #blog .blog-details{
     width: 100%;
   }
 }
