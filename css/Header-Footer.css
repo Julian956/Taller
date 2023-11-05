@@ -196,14 +196,149 @@
   align-items: center;
 }
 #cerrar {
-  display: none;
-}
+    display: none;
+  }
+
+
+/* Estilos para la lista de idiomas */
+#languages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para el elemento de lista del menú desplegable */
+  #dropdown {
+    display: inline;
+    position: relative;
+  }
+  
+  /* Estilos para el enlace principal del menú */
+  #dropbtn {
+    background-color: transparent;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el menú desplegable */
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    min-width: 160px;
+    
+   
+  }
+  
+  /* Mostrar el menú desplegable al pasar el cursor sobre el enlace principal */
+  #dropdown:hover #dropdown-content {
+    display: block;
+  }
+  
+  /* Estilos para las opciones del menú desplegable */
+  #dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+  
+  #title-marc {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-left: 220px;
+    margin-top: -35px;
+  }
+  
+  /* Estilos para el título de marca (h1) */
+  #title-marc h1 {
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+    margin: 0; /* Elimina el margen del título h1 */
+  }
+  
+  /* Estilos para el párrafo dentro de #title-marc */
+  #title-marc p {
+    font-size: 16px;
+    margin-top: -20px; /* Ajusta el tamaño de fuente del párrafo según tus preferencias */
+  }
+  
+  
+  
+ 
+  
+  
+
 
 
 
 /*******************************/
 /******** //*Footer*/ /***********/
 /********************************/
+
+
+
+
+
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+  }
+  #newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+  #newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+  }
+  #newsletter p span {
+    color: #ffbd27;
+  }
+  #newsletter .form {
+    display: flex;
+    width: 40%;
+  }
+  #newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #newsletter button {
+    background-color: #439b95;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
 
 footer {
   display: flex;
