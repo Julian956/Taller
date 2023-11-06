@@ -27,7 +27,7 @@
   border: none;
   border-radius: 50%;
   transition: transform 0.3s;
-  margin-right: 25px;
+  margin-right: 58px;
   margin-top: -25px;
   z-index: 10;
   clip-path: circle(25%);
@@ -46,7 +46,7 @@
 #navbar_lower {
   display: flex;
   list-style: none;
-  margin-left: -1250px;
+  margin-left: -850px;
   margin-top: 70px;
 }
 
@@ -155,6 +155,8 @@
   top: 0;
 }
 
+
+
 /***************************************/
 /*******/ /*Menu*/
 
@@ -205,6 +207,32 @@
 
 
 
+#Account {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdown-content a {
+  display: flex;
+  align-items: center;
+}
+
+#dropdown-content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+}
+
+
+
+.small-icon {
+  width: 20px; /* Ajusta el ancho deseado */
+  height: 20px; /* Ajusta la altura deseada */
+}
+
+
+
 
 
 #languages {
@@ -251,8 +279,8 @@
 
 #title-marc {
   text-align: center; /* Centra el contenido horizontalmente */
-  margin-left: 220px;
-  margin-top: -35px;
+  margin-left: 350px;
+  margin-top: -20px;
 }
 
 /* Estilos para el título de marca (h1) */
@@ -264,7 +292,7 @@
 /* Estilos para el párrafo dentro de #title-marc */
 #title-marc p {
   font-size: 16px;
-  margin-top: -20px; /* Ajusta el tamaño de fuente del párrafo según tus preferencias */
+  margin-top: 5px; /* Ajusta el tamaño de fuente del párrafo según tus preferencias */
 }
 
 /*******************************/

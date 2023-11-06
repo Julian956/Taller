@@ -291,10 +291,16 @@ body {
 /* Start Media Query */
 
 
-/*@media (max-width: 1280px) {
-  #sm-banner, #banner3 {
-    width: 100%; /* Ambos ocuparán todo el ancho de la pantalla 
-    float: none;
+@media (max-width: 1280px) {
+  #title-marc {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-left: 350px;
+    margin-top: -20px;
+  }
+
+  #title-marc p {
+    font-size: 16px;
+    margin-top: 5px; /* Ajusta el tamaño de fuente del párrafo según tus preferencias */
   }
 
   
@@ -309,7 +315,7 @@ body {
     max-width: 80%; 
     height: auto;
   }
-}*/
+}
 
 
 

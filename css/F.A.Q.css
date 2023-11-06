@@ -1,0 +1,37 @@
+#Questions .normal button {
+    color: #fff;
+    background-color: #088178;
+    padding: 12px 20px;
+  }
+
+
+
+
+  /* Estilos para el contenedor del acordeón */
+.accordion {
+    background-color: #fff; /* Color de fondo de tu acordeón */
+    margin: 0 auto; /* Centra el acordeón horizontalmente */
+    max-width: 600px; /* Establece el ancho máximo del acordeón */
+    padding: 20px; /* Añade un espacio alrededor del contenido */
+  }
+  
+  /* Oculta las respuestas por defecto */
+.accordion-content {
+    display: none;
+  }
+  
+  .accordion-button {
+    border: 2px solid #088178; /* Agrega un borde de 2px de color #088178 */
+    border-radius: 5%; /* Hace que el borde sea circular */
+    color: #000000; /* Color del texto del botón */
+    background-color: #fff; /* Fondo blanco */
+    transition: background-color 0.3s, color 0.3s; /* Agrega transiciones al color de fondo y texto */
+   
+    
+  }
+
+  
+  .accordion-button:focus, .accordion-button:active {
+    background-color: #088178; /* Cambia el fondo a #088178 al hacer clic */
+    color: #fff; /* Cambia el color del texto a blanco */
+  }
