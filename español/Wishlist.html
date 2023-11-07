@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
-    <link rel="stylesheet" href="css/Header-Footer.css">
-    <link rel="stylesheet" href="css/Wishlist.css">
-    <link rel="stylesheet" href="css/Shop.css">
-    <link rel="stylesheet" href="css/@Querys.css">
+    <link rel="stylesheet" href="/css/Header-Footer.css">
+    <link rel="stylesheet" href="/css/Wishlist.css">
+    <link rel="stylesheet" href="/css/Shop.css">
+    <link rel="stylesheet" href="/css/@Querys.css">
 </head>
 <body>
 
@@ -16,77 +16,134 @@
 
     <header>
         <!-- ... Contenido del encabezado ... -->
-        <section id="header">
-            <a href="#"><img src="img/ESTILO PREMIUM.svg" alt="logo" class="logs" /></a>
-            <nav>
-                <div>
-                    <ul id="navbar">
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li><a href="shop.html">Tienda</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
-                        <li><a href="About.html">Acerca</a></li>
-                        <li><a href="Contact.html">Contacto</a></li>
-                        <li id="lg-bag">
-                            <a class="active" href="Cart.html"><i class="far fa-shopping-bag"></i></a>
-                        </li>
-                        <a href="#" id="cerrar"><i class="far fa-times"></i></a>
-                    </ul>
-                    <div>
-                        <ul id="navbar_lower">
-                            <li>
-                                <a href="">Hombre</a>
-                                <ul>
-                                    <li><a href="">Camisas</a></li>
-                                    <li><a href="">Zapatos</a></li>
-                                    <li><a href="">Jean</a></li>
-                                    <li><a href="">Buzos</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Mujer</a>
-                                <ul>
-                                    <li><a href="">Blusas</a></li>
-                                    <li><a href="">Chaquetas</a></li>
-                                    <li><a href="">Zapatos</a></li>
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Accessorios</a>
-                                <ul>
-                                    <li><a href="">Gorras</a></li>
-                                    <li><a href="">Perfumes</a></li>
-                                    <li><a href="">Gafas</a></li>
-                                    <li>
-                                        <a href="">Perfumes</a>
-                                        <ul>
-                                            <li><a href="">Perfumes para hombre</a></li>
-                                            <li><a href="">Perfumes para mujer</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="">Joyeria</a>
-                                <ul>
-                                    <li><a href="">Anillos</a></li>
-                                    <li><a href="">Pulseras</a></li>
-                                    <li><a href="">Relojes</a></li>
-                                    <li><a href="">Cadenas</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="mobile">
-                    <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-                    <i id="bar" class="fas fa-outdent"></i>
-                </div>
-            </nav>
-        </section>
-    </header>
+       <section id="header">
+         <a href="#"><img src="/img/ESTILO PREMIUM.svg" alt="logo" class="logs"
+         /></a>
+         <div id="title-marc">
+           <h1>Estilo Premium</h1>
+           <p>Estilo sin limetes</p>
+       </div>
+         <nav>
+           
+           <div>
+             <ul id="navbar">
+               <ul id="languages">
+                   <li id="dropdown">
+                       <a href="#" id="dropbtn">Idioma</a>
+                       <ul id="dropdown-content">
+                           <li><a href="/español/index.html">Español</a></li>
+                           <li><a href="/index.html">Ingles</a></li>
+                       </ul>
+                   </li>
+               </ul>
+               <li>
+                 <a class="active" href="index.html" >Inicio</a>
+               </li>
+               <li><a href="shop.html">Tienda</a></li>
+               <li><a href="Blog.html">Blog</a></li>
+               <li><a href="About.html">Acerca</a></li>
+               <li><a href="Contact.html">Contacto</a></li>
+               <ul id="Account">
+                 <li id="dropdown">
+                     <a href="#" id="dropbtn"><img src="/img/Account.png" alt=""></a>
+                     <ul id="dropdown-content">
+                         <li><a href="#">Nombre de usuario</a></li>
+                         <li>
+                             <a href="#">
+                                 <img src="/img/Login.png" alt="">
+                                 <span>Inicio/Registro</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <img src="/img/Editprofile.png" alt="">
+                                 <span>Editar perfil</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="/español/Cart.html">
+                                 <img src="/img/CART.png" alt="">
+                                 <span>Carro de compras</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="/español/Wishlist.html">
+                                 <img src="/img/love.png" alt="">
+                                 <span>Lista de deseos</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <img src="/img/CART.png" alt="">
+                                 <span>Mi orden</span>
+                             </a>
+                         </li>
+                         <li>
+                             <a href="#">
+                                 <img src="/img/logout.png" alt="">
+                                 <span>Cerrar Sesion</span>
+                             </a>
+                         </li>
+                     </ul>
+                 </li>
+             </ul>
+             
+               <li id="lg-bag">
+                 <a href="Cart.html"><i class="far fa-shopping-bag"></i></a>
+               </li>
+               
+             </ul>
+             <div >
+               <ul id="navbar_lower">
+                 <li>
+                     <a href="">Hombre</a>
+                     <ul>
+                         <li><a href="">Camisas</a></li>
+                         <li><a href="">Zapatos</a></li>
+                         <li><a href="">Jeans</a></li>
+                         <li><a href="">Sudadera</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="">Mujer</a>
+                     <ul>
+                         <li><a href="">Blusas</a></li>
+                         <li><a href="">chaquetas</a></li>
+                         <li><a href="">Zapatos</a></li>
+                         <li><a href=""></a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="">Accessorios</a>
+                     <ul>
+                         <li><a href="">Gorras</a></li>
+                         <li><a href="">Perfumes</a></li>
+                         <li><a href="">Gafas de sol</a></li>
+                         <li>
+                             <a href="">Perfumes</a>
+                             <ul>
+                                 <li><a href="">Perfumes de hombre</a></li>
+                                 <li><a href="">Perfumes de mujer</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="">Joyeria</a>
+                     <ul>
+                         <li><a href="">Anillos</a></li>
+                         <li><a href="">Brasaletes</a></li>
+                         <li><a href="">Relojes</a></li>
+                         <li><a href="">Cadenas</a></li>
+                     </ul>
+                 </li>
+             </ul>
+             </div>
+           </div>
+          
+         </nav>
+       </section>
+     </header>
 
     <main>
         <article>
@@ -112,7 +169,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="img/products/f1.jpg" alt=""></td>
+                            <td><img src="/img/products/f1.jpg" alt=""></td>
                             <td class="product-name"><strong>Camisa de flores</strong></td>
                             <td class="product-price"><strong>118.19</strong></td>
                             <td class="stock-status in-stock"><strong>EN STOCK</strong></td>
@@ -120,7 +177,7 @@
                             <td><button class="normal">Añadir al carrito</button></td>
                         </tr>
                         <tr>
-                            <td><img src="img/products/f2.jpg" alt=""></td>
+                            <td><img src="/img/products/f2.jpg" alt=""></td>
                             <td class="product-name"><strong>Camisa de flores</strong></td>
                             <td class="product-price"><strong>118.19</strong></td>
                             <td class="stock-status in-stock"><strong>EN STOCK</strong></td>
@@ -128,7 +185,7 @@
                             <td><button class="normal">Añade al carrito</button></td>
                         </tr>
                         <tr>
-                            <td><img src="img/products/f3.jpg" alt=""></td>
+                            <td><img src="/img/products/f3.jpg" alt=""></td>
                             <td class="product-name"><strong>Camisa de flores</strong></td>
                             <td class="product-price"><strong>118.19</strong></td>
                             <td class="stock-status out-of-stock"><strong>AGOTADO</strong></td>
@@ -150,15 +207,14 @@
     <footer class="section-p1">
         <!-- Pie de página -->
         <div class="col">
-            <img class="logs" src="img/ESTILO PREMIUM.svg" alt="logo" cl />
-
-            <h4>Contacto</h4>
+            <img class="logs" src="/img/ESTILO PREMIUM.svg" alt="logo" />
+            <h4>ContactO</h4>
             <p>
                 <strong>Dirección:</strong> Cl 79 #48-29 B3 L5 - Central Mayorista,
                 Medellin
             </p>
             <p><strong>Celular:</strong> (+57) 604 5882996</p>
-            <p><strong>Cronograma:</strong></p>
+            <p><strong>Direccion:</strong></p>
             <div class="follow">
                 <h4>Siguenos</h4>
                 <div class="parent">
@@ -195,39 +251,50 @@
         </div>
 
         <div class="col">
-            <h4>Acerca</h4>
-            <a href="#">Acerca de nosotros</a>
-            <a href="#"> información de entrega</a>
-            <a href="#">Privacidad & Politica</a>
+            <h4>Acerca de</h4>
+            <a href="/español/About.html">Acerca de nosotros</a>
+            <a href="#">Informacion de entrega</a>
+            <a href="#">Politica & prevacidad</a>
             <a href="#">Terminos & Condiciones</a>
-            <a href="#">Contactanos</a>
+            <a href="/español/Contact.html">Contactanos</a>
         </div>
 
         <div class="col">
-            <h4>Mi perfil</h4>
+            <h4>Mi cuenta</h4>
+           <a href="/español/index.html">Inicio</a>
+           <a href="/español/shop.html">Tienda</a>
+           <a href="/español/Blog.html">Blog</a>
+           <a href="/español/About.html">Acerca</a>
+           <a href="/español/Contact.html">Contacto</a>
+           <a href="/español/F.A.Q.HTML">Preguntas frecuentes</a>
+           <a href="/español/Cart.html">Carrito de compra</a>
+           <a href="/español/Wishlist.html">Mis anhelos</a>
+          
+        </div>
+         <div class="col">
+            <h4>Mi cuenta</h4>
             <a href="#">Inicia secion</a>
-            <a href="#">Carrito de compras</a>
-            <a href="/Wishlist.html">Mi lista de deseos</a>
-            <a href="#"> Seguimiento de mi pedido</a>
-            <a href="#">Ayuda</a>
+            <a href="/español/Cart.html">Carrito de compras</a>
+            <a href="#">Mi lista de deseos</a>
+            <a href="#">Seguimiento de mi orden</a>
+            <a href="/español/F.A.Q.HTML">Ayuda</a>
         </div>
 
         <div class="col install">
             <h4>Instala la App</h4>
             <p>En App Store o Google Play</p>
             <div class="row">
-                <img src="img/pay/app.jpg" alt="" />
-                <img src="img/pay/play.jpg" alt="" />
+                <img src="/img/pay/app.jpg" alt="" />
+                <img src="/img/pay/play.jpg" alt="" />
             </div>
-            <p>Pasarelas de pago seguras</p>
-            <img src="img/pay/pay.png" alt="" />
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt="" />
         </div>
 
         <div class="copyright">
             <p>© 2023, Ecommerce</p>
         </div>
     </footer>
-
 
     
 </body>
