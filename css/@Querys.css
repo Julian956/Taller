@@ -5,10 +5,10 @@
     float: left;
     box-sizing: border-box;
   }
-}
-
-
-
+  #check{
+    display: none;
+    }
+  }
 
 
 @media (max-width: 1024px) {
@@ -26,25 +26,46 @@
     font-size: 16px;
     margin-top: 5px;
   }
-  #navbar{
+  #navbar {
     text-align: left;
   }
-  #navbar_lower{
+  #navbar_lower {
     text-align: right;
   }
-
+  #check{
+    display: none;
+  }
 }
 
-
-
 @media (max-width: 799px) {
+  #Text {
+    width: 100%;
+  }
+  .emeil {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
+
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  
+
+  
+
+
+
+
+
+
 
 
 
   
-  .section-p1 {
-    padding: 40px 40px;
-  }
+
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -60,30 +81,13 @@
     padding: 80px 0 0 10px;
     transition: 0.3s;
   }
-  #nav
-  .active {
+  #nav .active {
     right: 0px;
   }
   #navbar li {
     margin-bottom: 25px;
   }
-  #mobile {
-    display: flex;
-    align-items: center;
-  }
-  #mobile i {
-    color: #1a1a1a;
-    font-size: 24px;
-    padding-left: 20px;
-  }
-  #cerrar {
-    display: initial;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: #222;
-    font-size: 24px;
-  }
+  
   #lg-bag {
     display: none;
   }
@@ -127,11 +131,16 @@
 
 @media (max-width: 477px) {
 
- 
- 
-#title-marc{
-  display: none;
-}
+  .label-menu{
+    display: block;
+  }
+
+  .Menu-item{
+    display: none;
+  }
+  #title-marc {
+    display: none;
+  }
 
   .section-p1 {
     padding: 20px;
@@ -252,17 +261,38 @@
   #cart-add {
     flex-direction: column;
   }
-  #coupon{
+  #coupon {
     width: 100%;
   }
   #Subtotal {
     width: 100%;
     padding: 20px;
-}
+  }
+
+  #Text {
+    width: 100%;
+  }
+  .emeil {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
 }
 
-@media (max-width: 350px){
-  #title-marc{
+@media (max-width: 350px) {
+  #title-marc {
     display: none;
+  }
+
+
+  #Text {
+    width: 100%;
+  }
+  .emeil {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
   }
 }
